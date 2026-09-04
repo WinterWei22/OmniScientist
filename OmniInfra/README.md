@@ -13,4 +13,4 @@ biomedical tools, and scientific tasks in a consistent software framework.
 
 ## Package
 
-The core Python implementation is available in the `biomni` package directory.
+The core Python implementation is available in the `omniInfra` package directory.
