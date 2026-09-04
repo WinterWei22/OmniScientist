@@ -1,0 +1,47 @@
+[project]
+name = "omniagent"
+version = "0.1.0"
+description = "Research-oriented scientific agent runtime"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "aiocache>=0.12.3",
+    "aiofiles>=24.1.0",
+    "anthropic>=0.52.2",
+    "anyio>=4.9.0",
+    "arxiv>=2.2.0",
+    "click>=8.2.1",
+    "colorlog>=6.9.0",
+    "datasets>=3.6.0",
+    "dynaconf>=3.2.11",
+    "email-validator>=2.2.0",
+    "fastapi>=0.115.12",
+    "fuzzywuzzy>=0.18.0",
+    "gseapy>=1.1.9",
+    "humanize>=4.12.3",
+    "ipython>=9.3.0",
+    "jsonschema>=4.23.0",
+    "json-repair>=0.39.1",
+    "langchain>=0.3.25",
+    "langchain-mcp-adapters>=0.1.7",
+    "langgraph>=0.4.8",
+    "networkx>=3.5",
+    "openai>=1.84.0",
+    "openpyxl>=3.1.5",
+    "platformdirs>=4.3.8",
+    "pydantic>=2.0",
+    "python-dotenv>=1.1.0",
+    "pyyaml>=6.0",
+    "sqlmodel>=0.0.24",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = ["--import-mode=importlib"]
